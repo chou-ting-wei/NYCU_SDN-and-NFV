@@ -1,0 +1,105 @@
+mininet> dump
+<Host h1: h1-eth0:192.168.0.1 pid=7384> 
+<Host h2: h2-eth0:192.168.0.2 pid=7386> 
+<Host h3: h3-eth0:192.168.0.3 pid=7388> 
+<Host h4: h4-eth0:192.168.0.4 pid=7390> 
+<Host h5: h5-eth0:192.168.0.5 pid=7392> 
+<OVSSwitch{'protocols': 'OpenFlow14'} s1: lo:127.0.0.1,s1-eth1:None,s1-eth2:None pid=7397> 
+<OVSSwitch{'protocols': 'OpenFlow14'} s2: lo:127.0.0.1,s2-eth1:None,s2-eth2:None,s2-eth3:None,s2-eth4:None pid=7400> 
+<OVSSwitch{'protocols': 'OpenFlow14'} s3: lo:127.0.0.1,s3-eth1:None,s3-eth2:None pid=7403> 
+<OVSSwitch{'protocols': 'OpenFlow14'} s4: lo:127.0.0.1,s4-eth1:None,s4-eth2:None,s4-eth3:None pid=7406> 
+<RemoteController{'ip': '127.0.0.1:6653'} c0: 127.0.0.1:6653 pid=7378> 
+mininet> h1 ifconfig
+h1-eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.1  netmask 255.255.255.224  broadcast 192.168.0.31
+        inet6 fe80::2c03:5bff:fef0:930d  prefixlen 64  scopeid 0x20<link>
+        ether 2e:03:5b:f0:93:0d  txqueuelen 1000  (Ethernet)
+        RX packets 131  bytes 16035 (16.0 KB)
+        RX errors 0  dropped 84  overruns 0  frame 0
+        TX packets 27  bytes 1986 (1.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+mininet> h2 ifconfig
+h2-eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.2  netmask 255.255.255.224  broadcast 192.168.0.31
+        inet6 fe80::94c6:97ff:feeb:edff  prefixlen 64  scopeid 0x20<link>
+        ether 96:c6:97:eb:ed:ff  txqueuelen 1000  (Ethernet)
+        RX packets 145  bytes 17880 (17.8 KB)
+        RX errors 0  dropped 96  overruns 0  frame 0
+        TX packets 27  bytes 1986 (1.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+mininet> h3 ifconfig
+h3-eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.3  netmask 255.255.255.224  broadcast 192.168.0.31
+        inet6 fe80::4cf8:a0ff:fed2:ca12  prefixlen 64  scopeid 0x20<link>
+        ether 4e:f8:a0:d2:ca:12  txqueuelen 1000  (Ethernet)
+        RX packets 148  bytes 18200 (18.2 KB)
+        RX errors 0  dropped 98  overruns 0  frame 0
+        TX packets 27  bytes 1986 (1.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+mininet> h4 ifconfig
+h4-eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.4  netmask 255.255.255.224  broadcast 192.168.0.31
+        inet6 fe80::a479:50ff:fe43:f59a  prefixlen 64  scopeid 0x20<link>
+        ether a6:79:50:43:f5:9a  txqueuelen 1000  (Ethernet)
+        RX packets 156  bytes 19312 (19.3 KB)
+        RX errors 0  dropped 106  overruns 0  frame 0
+        TX packets 27  bytes 1986 (1.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+mininet> h5 ifconfig
+h5-eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.5  netmask 255.255.255.224  broadcast 192.168.0.31
+        inet6 fe80::d423:64ff:fe59:33ab  prefixlen 64  scopeid 0x20<link>
+        ether d6:23:64:59:33:ab  txqueuelen 1000  (Ethernet)
+        RX packets 164  bytes 20424 (20.4 KB)
+        RX errors 0  dropped 114  overruns 0  frame 0
+        TX packets 27  bytes 1986 (1.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
