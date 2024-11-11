@@ -30,13 +30,14 @@ class MyTopo(Topo):
 	#for i in range(2):
         self.addLink(self.switch[0], self.host[0])
         self.addLink(self.switch[4], self.host[1])
-        self.addLink(self.switch[2], self.host[2])
 
         self.addLink(self.switch[0], self.switch[1])
         self.addLink(self.switch[0], self.switch[3])
         self.addLink(self.switch[1], self.switch[2])
         self.addLink(self.switch[2], self.switch[4])
         self.addLink(self.switch[3], self.switch[4])
+        
+        self.addLink(self.switch[2], self.host[2])
 
 class IpHost(Host):
     def __init__(self, name, gateway, *args, **kwargs):
