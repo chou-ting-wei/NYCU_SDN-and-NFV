@@ -27,4 +27,6 @@ root@R1:/# vtysh
 R1# show ip bgp
 
 onos@root > app activate fpm
+onos@root > app activate org.onosproject.openflow
+onos@root > app activate org.onosproject.openflow-base
 onos@root > routes
