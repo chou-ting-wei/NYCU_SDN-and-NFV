@@ -17,7 +17,6 @@ docker exec h1 ifconfig
 docker exec h2 ifconfig
 docker exec h3 ifconfig
 docker exec h4 ifconfig
-onos@root > app activate fwd
 docker exec -it h1 ping 172.21.0.3 -c 3
 docker exec -it h1 ping 172.22.0.3 -c 3
 docker exec -it h1 ping 172.24.0.3 -c 3
@@ -26,7 +25,5 @@ docker exec -it R1 bash
 root@R1:/# vtysh
 R1# show ip bgp
 
-onos@root > app activate fpm
-onos@root > app activate org.onosproject.openflow
-onos@root > app activate org.onosproject.openflow-base
+onos@root > apps -a -s
 onos@root > routes
