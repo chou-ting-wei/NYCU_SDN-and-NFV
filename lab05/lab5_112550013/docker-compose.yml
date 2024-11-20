@@ -15,6 +15,8 @@ services:
       - "8181:8181"
     tty: true
     stdin_open: true
+    command: >
+      /bin/bash -c "source /opt/onos/bin/onos-service; onos-service start"
   
   h1:
     image: host
