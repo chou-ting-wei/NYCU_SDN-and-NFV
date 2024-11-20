@@ -178,8 +178,8 @@ services:
 
   R5:
     image: frrouting/frr-debian
-    container_name: R3
-    hostname: R3
+    container_name: R5
+    hostname: R5
     privileged: true
     sysctls:
       - net.ipv4.ip_forward=1
