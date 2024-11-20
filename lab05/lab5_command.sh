@@ -20,6 +20,15 @@ docker exec h4 ifconfig
 docker exec -it h1 ping 172.21.0.3 -c 3
 docker exec -it h1 ping 172.22.0.3 -c 3
 docker exec -it h1 ping 172.24.0.3 -c 3
+docker exec -it h2 ping 172.18.0.3 -c 3
+docker exec -it h2 ping 172.22.0.3 -c 3
+docker exec -it h2 ping 172.24.0.3 -c 3
+docker exec -it h3 ping 172.18.0.3 -c 3
+docker exec -it h3 ping 172.21.0.3 -c 3
+docker exec -it h3 ping 172.24.0.3 -c 3
+docker exec -it h4 ping 172.18.0.3 -c 3
+docker exec -it h4 ping 172.21.0.3 -c 3
+docker exec -it h4 ping 172.22.0.3 -c 3
 
 docker exec -it R1 bash
 root@R1:/# vtysh
