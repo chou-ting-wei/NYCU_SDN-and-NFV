@@ -136,7 +136,7 @@ services:
       - "host.docker.internal:host-gateway"
     volumes:
       - ./config/daemons:/etc/frr/daemons
-      - ./config/R1/frr.conf:/etc/frr/frr.conf
+      - ./config/R2/frr.conf:/etc/frr/frr.conf
 
   R3:
     image: frrouting/frr-debian
@@ -155,7 +155,7 @@ services:
       - "host.docker.internal:host-gateway"
     volumes:
       - ./config/daemons:/etc/frr/daemons
-      - ./config/R1/frr.conf:/etc/frr/frr.conf
+      - ./config/R3/frr.conf:/etc/frr/frr.conf
 
   R4:
     image: frrouting/frr-debian
@@ -174,7 +174,7 @@ services:
       - "host.docker.internal:host-gateway"
     volumes:
       - ./config/daemons:/etc/frr/daemons
-      - ./config/R1/frr.conf:/etc/frr/frr.conf
+      - ./config/R4/frr.conf:/etc/frr/frr.conf
 
   R5:
     image: frrouting/frr-debian
@@ -195,7 +195,7 @@ services:
       - "host.docker.internal:host-gateway"
     volumes:
       - ./config/daemons:/etc/frr/daemons
-      - ./config/R1/frr.conf:/etc/frr/frr.conf
+      - ./config/R5/frr.conf:/etc/frr/frr.conf
 
 networks:
   default:
