@@ -9,4 +9,5 @@ main:
 	sudo ovs-docker add-port ovsbr2 eth2 h2 --ipaddress=172.19.0.3/16
 clean:
 	docker compose down
-	sudo ovs-vsctl del-br ovsbr
+	sudo ovs-vsctl del-br ovsbr1
+	sudo ovs-vsctl del-br ovsbr2
