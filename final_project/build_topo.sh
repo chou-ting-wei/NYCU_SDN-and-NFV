@@ -296,7 +296,7 @@ onos-netcfg localhost $BASEDIR/config/$ID/config.json
 
 onos-app localhost install! target/ProxyArp-1.0-SNAPSHOT.oar
 onos-app localhost install! target/bridge-app-1.0-SNAPSHOT.oar
-onos-app localhost install! target/vRouter-1.0-SNAPSHOT.oar
+onos-app localhost install! target/vrouter-1.0-SNAPSHOT.oar
 
 log "Setup complete."
 
