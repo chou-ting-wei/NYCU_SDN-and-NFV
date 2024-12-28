@@ -3,7 +3,7 @@
 
 **本Repo提供為參考用途，不保證資料正確性，切勿直接抄襲。**
 
-## Homework
+## Lab
 - lab01: Environment Setup and Basic Operation
 - lab02: OpenFlow Protocol Observation and Flow Rule Installation
 - lab03: SDN-enabled Learning Bridge and Proxy ARP
